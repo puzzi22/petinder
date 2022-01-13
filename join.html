@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Házte socio | Petinder</title>
+	<meta name="description" content="Colabora con Petinder. Cumplimenta el formulario y ayudarás a nuestros amigos peludos">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="page-join">
+	<header>
+		<nav class="container">
+			<a class="link-logo" href="index.html">
+				<img class="logo" src="images/logo.svg" alt="Logo petinder">
+			</a>
+
+			<ul class="menu-links">
+				<li><a href="about.html">Sobre petinder</a></li>
+				<li><a href="tshirt.html">Camiseta</a></li>
+				<li class="active"><a href="join.html">Hazte socio</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+		<div class="container">
+			<h1 class="title">Hazte socio</h1>
+
+			<p>Colabora con Petinder haciéndote socio por solo 15 euros mensuales. Con muy poco puedes ayudar mucho a nuestros amigos peludos. Además puedes comprar nuestra exclusiva camiseta por solo 10 euros que se añadirán al primer pago. Rellena el siguiente formulario para unirte a nosotros:</p>
+
+			<form action="#" method="post">
+				<fieldset>
+					<legend>Datos personales</legend>
+
+					<div class="form-group">
+						<label for="nombre" class="form-label">Nombre <span class="required">*</span></label>
+						<input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}" title="Solo caracteres alfabéticos. Un mínimo de 2 y un máximo de 64 caracteres" required>
+					</div>
+
+					<div class="form-group">
+						<label for="apellidos" class="form-label">Apellidos <span class="required">*</span></label>
+						<input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Apellidos" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,128}" title="Solo caracteres alfabéticos. Un mínimo de 2 y un máximo de 128 caracteres" required>
+					</div>
+
+					<div class="form-group">
+						<label for="email" class="form-label">Correo electrónico <span class="required">*</span></label>
+						<input type="email" class="form-control" name="email" id="email" placeholder="Correo electrónico" required>
+					</div>
+
+					<div class="form-group">
+						<label for="dni" class="form-label">DNI <span class="required">*</span></label>
+						<input type="text" class="form-control" name="dni" id="dni" placeholder="DNI" required>
+					</div>
+
+					<div class="form-group">
+						<label for="fecha" class="form-label">Fecha de nacimiento</label>
+						<input type="date" class="form-control" name="fecha" id="fecha">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Dirección</legend>
+
+					<div class="form-group">
+						<label for="calle" class="form-label">Calle y número <span class="required">*</span></label>
+						<input type="text" class="form-control" name="calle" id="calle" placeholder="Calle y número" required>
+					</div>
+
+					<div class="form-group">
+						<label for="ciudad" class="form-label">Ciudad <span class="required">*</span></label>
+						<input type="text" class="form-control" name="ciudad" id="ciudad" placeholder="Ciudad" required>
+					</div>
+					<div class="form-group">
+						<label for="provincia" class="form-label">Provincia <span class="required">*</span></label>
+						<input type="text" class="form-control" name="provincia" id="provincia" placeholder="Provincia" required>
+					</div>
+					<div class="form-group">
+						<label for="cpostal" class="form-label">Código Postal <span class="required">*</span></label>
+						<input type="text" class="form-control" name="cpostal" id="cpostal" placeholder="Código postal" required>
+					</div>
+					<div class="form-group">
+						<label for="pais" class="form-label">País</label>
+						<select id="pais" class="form-control" name="pais">
+							<option value="-1">Seleccionar</option>
+							<option value="Andorra">Andorra</option>
+							<option value="España">España</option>
+							<option value="Francia">Francia</option>
+							<option value="Otro">Otro</option>
+						</select>
+					</div>
+				</fieldset>
+				<fieldset class="block-payment">
+					<legend>Datos de pago y camiseta</legend>
+
+					<h2>Método de pago</h2>
+
+					<ul class="radio-group">
+						<li class="radio-option">
+							<input type="radio" name="metodo_pago" id="pago_transfer" checked value="Transferencia">
+							<label for="pago_transfer">Transferencia</label>
+						</li>
+
+						<li class="radio-option">
+							<input type="radio" name="metodo_pago" id="pago_credito" value="Tarjeta de crédito">
+							<label for="pago_credito">Tarjeta de crédito</label>
+						</li>
+
+						<li class="radio-option">
+							<input type="radio" name="metodo_pago" id="pago_paypal" value="Paypal">
+							<label for="pago_paypal">Paypal</label>
+						</li>
+					</ul>
+					<h2>Camiseta</h2>
+					<p>Si quieres que te enviemos la camiseta Petinder por 10€ más, selecciona la talla a
+						continuación.</p>
+					<label for="tallas" class="form-label">Talla camiseta</label>
+
+					<select id="tallas" class="form-control" name="tallas">
+						<option value="-1">No quiero camiseta</option>
+						<optgroup label="Mujeres">
+							<option value="Mujer S">S</option>
+							<option value="Mujer M">M</option>
+							<option value="Mujer L">L</option>
+							<option value="Mujer XL">XL</option>
+						</optgroup>
+						<optgroup label="Hombres">
+							<option value="Hombre S">S</option>
+							<option value="Hombre M">M</option>
+							<option value="Hombre L">L</option>
+							<option value="Hombre XL">XL</option>
+							<option value="Hombre XXL">XXL</option>
+							<option value="Hombre XXXL">XXXL</option>
+						</optgroup>
+					</select>
+				</fieldset>
+
+
+				<div class="form-footer">
+					<small>* Todos los campos marcados son obligatorios</small>
+					<div class="conditions"><input type="checkbox" required id="acepto" value="Acepto"> <label for="acepto">He leído y acepto la política de privacidad y las condiciones de uso</label></div>
+					<button type="submit" class="boton">Enviar</button>
+				</div>
+
+			</form>
+
+		</div>
+
+	</main>
+
+	<footer>
+		<div class="container">
+			<span>2021 © Petinder - Nombre y apellidos del estudiante</span>
+
+			<ul class="legal-links">
+				<li><a href="">Términos y condiciones de uso</a></li>
+				<li><a href="">Política de privacidad</a></li>
+				<li><a href="">Cookies</a></li>
+				<li><a href="">FAQ</a></li>
+			</ul>
+		</div>
+	</footer>
+
+
+</body>
+
+</html>
