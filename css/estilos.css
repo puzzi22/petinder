@@ -323,7 +323,12 @@ footer .legal-links li {
    width: 100%;
    margin-top: 30px;
    border-collapse: collapse;
-   font-size: 0.8rem;
+}
+
+@media (max-width: 767px) {
+   .table {
+      font-size: 0.7rem;
+   }
 }
 
 .table,
